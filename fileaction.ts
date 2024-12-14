@@ -22,6 +22,10 @@ export const uploadFile = async({
        ID.unique(),
        inputFile,
      );
-    const 
+    const  fileDocument ={
+     typr: getFileType(bucketFile.name).type,
+     name:bucketFile.name,
+     url: constructFileUrl(bucketFile.$id)
+    }
   }
 }
