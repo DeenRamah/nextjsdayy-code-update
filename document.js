@@ -15,5 +15,4 @@ export default class Document extends NextDocument {
         </body>
       </Html>
     )
-  }
 }
